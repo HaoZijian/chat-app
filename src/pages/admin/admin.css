@@ -1,0 +1,108 @@
+/* admin.css */
+.admin-container {
+  font-family: Arial, sans-serif;
+  width: 100%;
+}
+
+.controls {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.add-contact-button,
+.export-button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-contact-button:hover,
+.export-button:hover {
+  background-color: #0056b3;
+}
+
+.contacts-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.contacts-table thead {
+  background-color: #f8f9fa;
+}
+
+.contacts-table th,
+.contacts-table td {
+  text-align: left;
+  padding: 8px;
+  border: 1px solid #dee2e6;
+}
+
+.contacts-table tbody tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+.operate-cell button {
+  padding: 5px 10px;
+  margin-right: 5px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.operate-cell button:hover {
+  background-color: darkred;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  width: 300px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.modal-content h2 {
+  margin-top: 0;
+}
+
+.modal-content input {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.modal-content button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.modal-content button:last-child {
+  background-color: #f44336;
+  color: white;
+}
+
+/* 样式可以根据需要进一步优化和调整 */

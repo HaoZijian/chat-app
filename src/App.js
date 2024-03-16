@@ -16,6 +16,7 @@ function App() {
           <Route index element={<Login />} />
           <Route path="/registration" element={<Register />} /> 
           <Route path="/chat" element={<Chat />} />
+          <Route path="/admin" element={<Admin />} />
         </Routes>
       </AuthProvider>
     </BrowserRouter>
