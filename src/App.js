@@ -5,6 +5,7 @@ import Register from './pages/registration/register';
 import Chat from './pages/chat/chat';
 import { AuthProvider } from './Context/AuthContext';
 import ProtectedRoute from './components/ProtectedRoute';
+import Admin from './pages/admin/admin';
 
 function App() {
 
