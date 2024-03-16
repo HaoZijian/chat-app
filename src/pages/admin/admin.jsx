@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
-import './admin.css'; // 确保你的CSS文件正确链接
+import './admin.css';
 
 const Admin = () => {
   const [contacts, setContacts] = useState([
     { id: 1, name: 'Linda', email: 'linda@example.com', createTime: '09:09 2024/5/22' },
     { id: 2, name: 'James', email: 'james@example.com', createTime: '08:09 2024/5/21' },
     { id: 3, name: 'Robert', email: 'robert@example.com', createTime: '07:09 2024/5/20' },
-    // 更多初始联系人数据...
   ]);
   const [contactName, setContactName] = useState('');
   const [contactEmail, setContactEmail] = useState('');
@@ -38,9 +37,9 @@ const Admin = () => {
         <button className="add-contact-button" onClick={() => setShowModal(true)}>
           Add Contact
         </button>
-        <button className="export-button" onClick={() => { }}>
+        {/* <button className="export-button" onClick={() => { }}>
           Export
-        </button>
+        </button> */}
       </div>
       <table className="contacts-table">
         <thead>
@@ -80,8 +79,10 @@ const Admin = () => {
               value={newContact.email}
               onChange={e => setNewContact({ ...newContact, email: e.target.value })}
             />
-            <button onClick={handleAddContact}>Save</button>
-            <button onClick={() => setShowModal(false)}>Cancel</button>
+            <div className='modal-button-area'> 
+              <button className='save' onClick={handleAddContact}>Save</button>
+              <button className='cancel' onClick={() => setShowModal(false)}>Cancel</button>
+            </div>
           </div>
         </div>
       )}
